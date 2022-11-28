@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+div {
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+p {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+}
+span {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  animation: run 2s infinite ease-in-out;
+}
+
+.one {
+  background: gainsboro;
+  animation-delay: 1.5s;
+}
+.two {
+  background: ghostwhite;
+ 
+  animation-delay: 1s;
+}
+.three {
+  background: rgb(237, 237, 254);
+
+  animation-delay: 0.5s;
+}
+.four {
+  background: rgb(224, 224, 254);
+}
+
+@-webkit-keyframes run {
+  0% {
+    transform: translate(0%);
+    border-radius: 50%;
+  }
+  25% {
+    transform: translate(150%) scale(0.5);
+    border-radius: 0%;
+  }
+  50% {
+    transform: translate(150%, 150%);
+    border-radius: 50%;
+  }
+  75% {
+    transform: translate(0%, 150%) scale(0.5);
+    border-radius: 0%;
+  }
+}
+@keyframes run {
+  0% {
+    transform: translate(0%);
+    border-radius: 50%;
+  }
+  25% {
+    transform: translate(150%) scale(0.5);
+    border-radius: 0%;
+  }
+  50% {
+    transform: translate(150%, 150%);
+    border-radius: 50%;
+  }
+  75% {
+    transform: translate(0%, 150%) scale(0.5);
+    border-radius: 0%;
+  }
+}
